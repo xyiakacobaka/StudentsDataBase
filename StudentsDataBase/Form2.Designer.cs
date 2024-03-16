@@ -35,7 +35,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(90, 73);
+            this.label1.Location = new System.Drawing.Point(105, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(386, 33);
             this.label1.TabIndex = 0;
@@ -45,11 +45,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(573, 224);
+            this.ClientSize = new System.Drawing.Size(574, 224);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Внимание!";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form2_Load);

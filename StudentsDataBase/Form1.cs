@@ -42,11 +42,23 @@ namespace StudentsDataBase
             if (LastName.Text != string.Empty && FirstName.Text != string.Empty && 
                 SecondName.Text != string.Empty && Group.Text != string.Empty)
             {
+                bool succes = Int32.TryParse(Group.Text, out int x);
+                if(succes && x == 1 || x == 2 ||x == 3 ||x == 4)
+                {
 
+                }
+                else
+                {
+                    Form2 Form2 = new Form2();
+                    Form2.ShowDialog();
+                }
             }
             else
             {
-                
+                {
+                    Form2 Form2 = new Form2();
+                    Form2.ShowDialog();
+                }
             }
         }
 
@@ -56,6 +68,11 @@ namespace StudentsDataBase
         }
 
         private void Delete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
