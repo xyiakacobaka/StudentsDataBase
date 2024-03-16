@@ -39,6 +39,7 @@ namespace StudentsDataBase
 
         private void Add_Click(object sender, EventArgs e)
         {
+            Form2 Form2 = new Form2();
             if (LastName.Text != string.Empty && FirstName.Text != string.Empty && 
                 SecondName.Text != string.Empty && Group.Text != string.Empty)
             {
@@ -49,14 +50,12 @@ namespace StudentsDataBase
                 }
                 else
                 {
-                    Form2 Form2 = new Form2();
                     Form2.ShowDialog();
                 }
             }
             else
             {
                 {
-                    Form2 Form2 = new Form2();
                     Form2.ShowDialog();
                 }
             }
